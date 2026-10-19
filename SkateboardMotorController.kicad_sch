@@ -1700,6 +1700,213 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyLibrary:MP9486"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MP9486"
+				(at 0 -9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias"
+				(at -0.508 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MP9486_1_1"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -12.7)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 247 168 1)
+					)
+				)
+				(pin input line
+					(at -7.62 5.08 0)
+					(length 2.54)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -6.35 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "COMP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -6.35 180)
+					(length 2.54)
+					(name "SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Oscillator:MAX7375AXR805"
 			(pin_names
 				(offset 0.254)
@@ -3301,6 +3508,109 @@
 		)
 	)
 	(symbol
+		(lib_id "MyLibrary:MP9486")
+		(at 83.82 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2caa1307-282f-4142-8afc-24f6d2dba8fa")
+		(property "Reference" "MP1"
+			(at 84.074 188.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MP9486"
+			(at 83.82 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias"
+			(at 83.312 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP9486/?srsltid=AU7gw4WBPXX73u71-zxU3O6eeoUXKs0Tn8aKEEhdp0QPcMegq4pCLmCL"
+			(at 83.82 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "60V -> 12V Buck converter, 1A max"
+			(at 83.82 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactuer PN" "MP9486GN-Z"
+			(at 83.82 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JLCpcb"
+			(at 83.82 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "96477032-020a-492c-ab81-ec29226f9acf")
+		)
+		(pin "1"
+			(uuid "1d6563e5-8e2e-465b-854a-b9a5e2da1d2d")
+		)
+		(pin "6"
+			(uuid "dfe732cf-359e-46c8-8735-6fb248e3a16d")
+		)
+		(pin "8"
+			(uuid "85173c4a-ec29-43b3-be78-45b523bfd69e")
+		)
+		(pin "7"
+			(uuid "59482bf8-b40f-4faf-a913-75cffe0ac961")
+		)
+		(pin "3"
+			(uuid "d24b08c4-fdf0-4b02-9cc3-46ceb91d7e7b")
+		)
+		(pin "2"
+			(uuid "46eebec0-a453-4878-b17f-19d8889aa408")
+		)
+		(pin "5"
+			(uuid "42041a56-32c3-45c0-ae68-0dd8b929075f")
+		)
+		(instances
+			(project ""
+				(path "/51090867-fcd4-4552-acda-4929fd1c7810"
+					(reference "MP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 142.24 127 0)
 		(unit 1)
@@ -4128,7 +4438,7 @@
 	)
 	(symbol
 		(lib_id "Driver_FET:IRS2104")
-		(at 271.78 58.42 0)
+		(at 283.21 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4137,7 +4447,7 @@
 		(fields_autoplaced yes)
 		(uuid "97b53d1f-447e-4646-80cd-6a1c8506ab84")
 		(property "Reference" "U2"
-			(at 273.9233 43.18 0)
+			(at 285.3533 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4146,7 +4456,7 @@
 			)
 		)
 		(property "Value" "IRS2104"
-			(at 273.9233 45.72 0)
+			(at 285.3533 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4155,7 +4465,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 271.78 58.42 0)
+			(at 283.21 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4475,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/irs2104.pdf?fileId=5546d462533600a40153567633f727a1"
-			(at 271.78 58.42 0)
+			(at 283.21 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4484,7 @@
 			)
 		)
 		(property "Description" "Half-Bridge Driver, 600V, 290/600mA, PDIP-8/SOIC-8"
-			(at 271.78 58.42 0)
+			(at 283.21 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4673,6 +4983,74 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 251.46 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3a01cf8-d3aa-4f01-b0ee-5322120424ad")
+		(property "Reference" "R7"
+			(at 251.46 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 251.46 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 55.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 251.46 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "329c9b52-e4d8-44a1-a76b-5308fa886fbf")
+		)
+		(pin "1"
+			(uuid "d04f7a64-96f9-40af-85c3-54db25e7fc27")
+		)
+		(instances
+			(project "SkateboardMotorController"
+				(path "/51090867-fcd4-4552-acda-4929fd1c7810"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 120.65 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4981,6 +5359,74 @@
 			(project ""
 				(path "/51090867-fcd4-4552-acda-4929fd1c7810"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 251.46 66.04 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2e3318d-b09a-4526-a0ad-b214a3c42ecc")
+		(property "Reference" "R6"
+			(at 251.46 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 251.46 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 67.818 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca6c3169-e376-415a-b03e-1aacfa8acdac")
+		)
+		(pin "1"
+			(uuid "85d3bb38-1961-414b-890c-2179c60d7284")
+		)
+		(instances
+			(project ""
+				(path "/51090867-fcd4-4552-acda-4929fd1c7810"
+					(reference "R6")
 					(unit 1)
 				)
 			)
