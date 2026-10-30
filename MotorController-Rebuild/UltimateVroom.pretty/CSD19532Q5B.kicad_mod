@@ -1,0 +1,153 @@
+(footprint "CSD19532Q5B"
+	(version 20241229)
+	(generator "kicad")
+	(layer "F.Cu")
+	(descr "TI CSD19532Q5B SLPS414B pp1,8,9; no EP9")
+	(tags "TI CSD19532Q5B SON 5x6")
+	(attr smd)
+	(fp_rect
+		(start -3.000000 -2.500000)
+		(end 3.000000 2.500000)
+		(stroke
+			(width 0.050000)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -3.710000 -2.800000)
+		(end 3.710000 2.800000)
+		(stroke
+			(width 0.050000)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+	)
+	(pad "5" smd rect
+		(at -0.941000 0.000000)
+		(size 3.850000 4.520000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "5" smd rect
+		(at -3.161000 -1.905000)
+		(size 0.590000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "4" smd rect
+		(at 2.770000 -1.905000)
+		(size 1.372000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "6" smd rect
+		(at -3.161000 -0.635000)
+		(size 0.590000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "3" smd rect
+		(at 2.770000 -0.635000)
+		(size 1.372000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "7" smd rect
+		(at -3.161000 0.635000)
+		(size 0.590000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 2.770000 0.635000)
+		(size 1.372000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "8" smd rect
+		(at -3.161000 1.905000)
+		(size 0.590000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "1" smd rect
+		(at 2.770000 1.905000)
+		(size 1.372000 0.710000)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "" smd rect
+		(at -2.898000 -1.905000)
+		(size 0.766000 0.508000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.770000 -1.905000)
+		(size 1.072000 0.562000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -1.582000 -1.569000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 0.062000 -1.569000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -2.898000 -0.635000)
+		(size 0.766000 0.508000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.770000 -0.635000)
+		(size 1.072000 0.562000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -1.582000 -0.523000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 0.062000 -0.523000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -2.898000 0.635000)
+		(size 0.766000 0.508000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.770000 0.635000)
+		(size 1.072000 0.562000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -1.582000 0.523000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 0.062000 0.523000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -2.898000 1.905000)
+		(size 0.766000 0.508000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.770000 1.905000)
+		(size 1.072000 0.562000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -1.582000 1.569000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 0.062000 1.569000)
+		(size 1.294000 0.746000)
+		(layers "F.Paste")
+	)
+)
