@@ -1,0 +1,240 @@
+(footprint "PowerFLAT-8_5x6mm_ST-typeR"
+	(version 20260206)
+	(generator "kicad")
+	(layer "F.Cu")
+	(descr "ST PowerFLAT 5x6 type R (STL90N10F7, ST DocID024551 Rev 6 Fig. 20 recommended footprint, 1.27 mm pitch): four 0.65 x 1.15 mm lead pads (S,S,S,G) on one side, one drain pad trimmed to 4.525 x 4.41 mm (the figure shows 4.60 wide x 4.65 long with three relief notches; trimmed by 0.095 mm per side across and 0.125 mm on the lead side, solid rectangle, to keep 0.2 mm clearance to the finished shunt sense tracks, so the lead-to-drain gap is 0.925 mm instead of 0.80). Pad set 6.60 mm overall, 3.81 mm lead pitch span. Drawn from the datasheet figure; the pin-1 marker and courtyard follow KiCad TDSON-8-1.")
+	(tags "powerflat 5x6 mosfet st")
+	(property "Reference" "REF**"
+		(at 0 -3.5 0)
+		(layer "F.SilkS")
+		(uuid "2e99f164-4a75-4450-8e26-e92930b72778")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TDSON-8-1"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(uuid "bd2e99e4-92a3-448a-a566-c2615227057c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "632c1d84-19c8-4391-89a5-dcceef2b9fb8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f2d1d6e-1971-4a27-b53c-4b606f79345d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 3.06 -2.685)
+		(end -2.62 -2.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bb135f17-854b-44d6-b01d-97d1ac73fd61")
+	)
+	(fp_line
+		(start 3.06 2.685)
+		(end -3.06 2.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4221ef13-3a7d-405a-bfef-210ece47529c")
+	)
+	(fp_poly
+		(pts
+			(xy -3.131622 -2.42027) (xy -3.371622 -2.75027) (xy -2.891622 -2.75027) (xy -3.131622 -2.42027)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "da28e3b8-9c92-4eba-9c46-9e5f1fd329ac")
+	)
+	(fp_line
+		(start -3.58 -2.83)
+		(end -3.58 2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d189ac2d-bbbb-4733-b51b-67b393dc75aa")
+	)
+	(fp_line
+		(start -3.58 2.83)
+		(end 3.58 2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "79e023e1-e281-4e2f-ac43-1f8aea31f838")
+	)
+	(fp_line
+		(start 3.58 -2.83)
+		(end -3.58 -2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "954ff3c0-6dc9-45d2-be8b-858f382a6998")
+	)
+	(fp_line
+		(start 3.58 2.83)
+		(end 3.58 -2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7f684133-9b8b-4ed5-88f5-e9d9b5045e4c")
+	)
+	(fp_line
+		(start -2.95 2.575)
+		(end -2.95 -1.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "06ed0a6c-600b-40a6-9b23-b89a00e520c0")
+	)
+	(fp_line
+		(start -1.95 -2.575)
+		(end -2.95 -1.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8477b640-c48e-46ae-838e-08bdfa5ab101")
+	)
+	(fp_line
+		(start -1.95 -2.575)
+		(end 2.95 -2.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c15b7c5e-a5a3-430c-9262-2e4006bc416b")
+	)
+	(fp_line
+		(start 2.95 -2.575)
+		(end 2.95 2.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cc3c9250-4c62-405c-9aa0-d7233fe51609")
+	)
+	(fp_line
+		(start 2.95 2.575)
+		(end -2.95 2.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9910b761-8f69-4c3d-b874-e53c6ed39b62")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ef248a45-001a-40f1-9d6f-7466c2ca3503")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.725 -1.905)
+		(size 1.15 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+	)
+	(pad "2" smd roundrect
+		(at -2.725 -0.635)
+		(size 1.15 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+	)
+	(pad "3" smd roundrect
+		(at -2.725 0.635)
+		(size 1.15 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+	)
+	(pad "4" smd roundrect
+		(at -2.725 1.905)
+		(size 1.15 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+	)
+	(pad "5" smd rect
+		(at 1.0375 0)
+		(size 4.525 4.41)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "" smd rect
+		(at -0.1625 -1.2)
+		(size 1.9 1.9)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at -0.1625 1.2)
+		(size 1.9 1.9)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.2375 -1.2)
+		(size 1.9 1.9)
+		(layers "F.Paste")
+	)
+	(pad "" smd rect
+		(at 2.2375 1.2)
+		(size 1.9 1.9)
+		(layers "F.Paste")
+	)
+	(embedded_fonts no)
+)
