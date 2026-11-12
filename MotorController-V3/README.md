@@ -38,7 +38,7 @@ The board is sized for a 12S A123 pack (43.2 V charged) and about 13 A continuou
 
 ## What has been checked
 
-- KiCad DRC: 0 errors, 0 unconnected, schematic and board match. 24 warnings, all `hole_to_hole` (vias drilled very close together or on top of each other).
+- KiCad DRC: 0 errors, 0 warnings, 0 unconnected, schematic and board match (24 stacked duplicate vias were removed).
 - KiCad ERC: 0 errors. 31 warnings (wire ends off grid, and library symbols that differ from the copies in the schematic).
 
 Nothing here has been built or powered. No person has reviewed the layout yet.
@@ -53,24 +53,25 @@ The target is 13 A continuous with a 10 C rise (IPC-2221, 2 oz outer copper), wh
 
 | Net | Narrowest | Carries about |
 |---|---|---|
-| Motor 1 phase A | 3.5 mm, bottom | 9.8 A |
-| Motor 1 phase B | 3.75 mm, bottom | 10.3 A |
+| Motor 1 phase A | 3.75 mm, bottom | 10.3 A |
+| Motor 1 phase B | 4.75 mm, bottom | 12.2 A |
 | Motor 1 phase C | 3.0 mm, bottom | 8.8 A |
-| Motor 1 phase A low side | 5.0 mm, top | 12.7 A |
 | Motor 2 phase A | 4.0 mm, bottom | 10.8 A |
-| Motor 2 phase C | 3.0 mm bottom + 0.75 mm top | 12.0 A |
 
-The necks are short, so a bench prototype at low current is fine, but they should be widened before running at full load. The estimate for where the battery bus and ground enter the inner planes near the FETs also comes out low (about 5 A per FET by the same rule). That estimate is conservative for a plane, but it has not been checked properly.
+Motor 1 phase A low side and motor 2 phase C now reach 13 A. The remaining necks come from placement: on these phases the phase pad sits on the far side of the FET pair and shunt, so the phase copper has to squeeze between the shunt's ground vias and the high-side FET's bus vias. Fixing them properly means moving parts. The necks are short, so a bench prototype at low current is fine, but they should be widened before running at full load. The estimate for where the battery bus and ground enter the inner planes near the FETs also comes out low (about 5 A per FET by the same rule). That estimate is conservative for a plane, but it has not been checked properly.
 
 **3. The signal routing is messy.**
-The PWM, hall and UART lines change layers far more often than they need to (65 extra layer changes). The cause is that the MCU pins were assigned before the parts were placed, so the PWM lines leave the MCU in a different order than the gate driver inputs. Six signal runs go through the In2 plane to avoid cutting the phase pours on the bottom: `M1_INH_A`, `M2_INH_A`, `M2_INH_B`, `M2_HALL_B`, `UART_TX`, and the motor 1 hall A/B input lines. They work, but they are slots in a power plane. The next version should fix the pin assignment first.
+The PWM, hall and UART lines change layers far more often than they need to (62 extra layer changes). The cause is that the MCU pins were assigned before the parts were placed, so the PWM lines leave the MCU in a different order than the gate driver inputs. Some signal runs go through the In2 plane to avoid cutting the phase pours on the bottom: `M1_INH_A`, `M2_INH_A`, `M2_INH_B`, `M2_HALL_B`, the motor 1 hall A/B input lines, and part of `+3V3`. They work, but they are slots in a power plane. The next version should fix the pin assignment first.
 
-**4. Things to know before writing firmware.**
+**4. Current sense inputs share the ground net.**
+Every INA240 IN- pin is on the GND net in the schematic. The layout keeps each IN- trace on its own path to the shunt pad (no vias or pours touching it away from the shunt), but a cleaner fix is to give each IN- its own net with a net tie at the shunt.
+
+**5. Things to know before writing firmware.**
 - UART TX is on PB11 and RX on PA3. That pair is LPUART1, not USART2.
 - The two motors use the two advanced timers, TIM1 and TIM8. The pin map is in the schematic; check it against the datasheet before relying on it.
 - There is no Bluetooth module on this board. The UART header is the only link for a remote.
 
-**5. Not checked at all.**
+**6. Not checked at all.**
 Thermal behaviour, the fuse against two 30 A bursts, gate resistor values against ringing, the bootstrap and dead-time settings, and whether the flat bulk caps and the heatsink fit the enclosure.
 
 ## What is next
