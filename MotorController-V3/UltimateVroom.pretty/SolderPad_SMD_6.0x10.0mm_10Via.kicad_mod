@@ -2,7 +2,7 @@
 	(version 20260206)
 	(generator "kicad")
 	(layer "F.Cu")
-	(descr "Flat SMD solder pad for one wire soldered straight to the board: 6.0 x 10.0 mm copper, mask open, no paste, 10 plated 0.5 mm stitching holes, solid zone connection.12 CRF1:1PAD_4x5mm and KiCad TestPoint_Pad_4.0x4.0mm.")
+	(descr "Flat SMD solder pad for one wire soldered straight to the board: 6.0 x 10.0 mm copper, mask open, no paste, 10 plated 0.5 mm stitching holes, solid zone connection. After VESC 4.12 CRF1:1PAD_4x5mm and KiCad TestPoint_Pad_4.0x4.0mm.")
 	(tags "solder pad wire SMD")
 	(property "Reference" "REF**"
 		(at 0 -6 0)

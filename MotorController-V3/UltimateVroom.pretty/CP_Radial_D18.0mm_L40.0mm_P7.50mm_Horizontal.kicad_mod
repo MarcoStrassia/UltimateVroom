@@ -2,7 +2,7 @@
 	(version 20260206)
 	(generator "kicad")
 	(layer "F.Cu")
-	(descr "CP, radial electrolytic lying flat on the board, leads bent 90 deg, D18.0mm x L40.0mm, pin pitch 7.50mm, lead 0.8mm (drill 1.2mm). Glue or strap the can; the courtyard keeps 1.5mm around the body for it., pads per KiCad CP_Radial_D18.0mm_P7.50mm, body per CP_Axial_*_Horizontal.")
+	(descr "CP, radial electrolytic lying flat on the board, leads bent 90 deg, D18.0mm x L40.0mm, pin pitch 7.50mm, lead 0.8mm (drill 1.2mm). Glue or strap the can; the courtyard keeps 1.5mm around the body for it. Pads per KiCad CP_Radial_D18.0mm_P7.50mm, body per CP_Axial_*_Horizontal.")
 	(tags "CP radial electrolytic horizontal lying flat glued")
 	(property "Reference" "REF**"
 		(at 22.5 -7.75 0)

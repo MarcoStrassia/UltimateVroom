@@ -39804,7 +39804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm"
+		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm_10Via"
 			(at 170.18 185.42 0)
 			(effects
 				(font
@@ -39933,7 +39933,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm"
+		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm_10Via"
 			(at 226.06 185.42 0)
 			(effects
 				(font
@@ -40062,7 +40062,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm"
+		(property "Footprint" "UltimateVroom:SolderPad_SMD_6.0x10.0mm_10Via"
 			(at 276.86 185.42 0)
 			(effects
 				(font
